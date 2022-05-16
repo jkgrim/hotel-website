@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TNH - Reservations</title>
+  </head>
+
+  <body>
+    <div class="navbar wrapper">
+      <div class="link">
+        <a href="../index.html">Home</a>
+      </div>
+      <div class="link">
+        <a href="./reservations.html">Reservations</a>
+      </div>
+      <div class="link">
+        <a href="./contact.html">Contact</a>
+      </div>
+      <div class="link">
+        <a href="./dining.html">Dining</a>
+      </div>
+      <div class="link">
+        <a href="./guestrooms.html">Guestrooms</a>
+      </div>
+    </div>
+
+    <div>
+      <h1>Reservations</h1>
+      Please fill out the form below to book your getaway.
+    </div>
+
+    <div class="web-form-wrapper">
+      <form action="https://httpbin.org/post" method="post">
+        <div>
+          <label for="email">Email *</label>
+          <input
+            name="email"
+            type="text"
+            placeholder="ironman@stark.org"
+            required
+          />
+        </div>
+        <div>
+          <label for="first-name">First Name *</label>
+          <input
+            name="first-name"
+            type="text"
+            placeholder="e.g. Tony"
+            required
+          />
+        </div>
+        <div>
+          <label for="last-name">Last Name *</label>
+          <input
+            name="last-name"
+            type="text"
+            placeholder="e.g. Stark"
+            required
+          />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input name="phone" type="text" placeholder="(555) 555-5555" />
+        </div>
+        <div>
+          <label for="guests">Number of guests *</label>
+          <input
+            name="guests"
+            type="text"
+            placeholder="1 Adult, 2 Children"
+            required
+          />
+        </div>
+        <div>
+          <label for="check-in">Check-in *</label>
+          <input name="check-in" type="date" required />
+        </div>
+        <div>
+          <label for="check-out">Check-out *</label>
+          <input name="check-out" type="date" required />
+        </div>
+
+        <div class="radio-button-wrapper">
+          Would you like to opt-in for room service? (Free of charge)
+          <br />
+          <input
+            type="radio"
+            id="roomservice-yes"
+            name="roomservice"
+            value="YES"
+          />
+          <label for="roomservice-yes">Yes</label><br />
+          <input
+            type="radio"
+            id="roomservice-no"
+            name="roomservice"
+            value="NO"
+          />
+          <label for="roomservice-no">No</label><br />
+        </div>
+
+        <div class="checkbox-wrapper">
+          Service animal?
+          <input type="checkbox" name="dog" value="Dog" />
+          <label for="dog">Dog</label>
+          <input type="checkbox" name="cat" value="Cat" />
+          <label for="cat">Cat</label>
+          <input type="checkbox" name="none" value="None" />
+          <label for="none">None</label>
+        </div>
+
+        <div>
+          <button>Submit</button>
+        </div>
+        <h5>* Indicated field is required.</h5>
+      </form>
+    </div>
+
+    <footer>
+      <h4>© 2022 The Notorious Hotel. All Rights Reserved</h4>
+    </footer>
+  </body>
+</html>
